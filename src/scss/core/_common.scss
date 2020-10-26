@@ -11,7 +11,8 @@ input,
 button,
 textarea,
 select {
-  // font-family: sans-serif;
+  font-size: 16px;
+  font-family: 'Ralewey';
 }
 
 ul {
@@ -24,4 +25,10 @@ a, button {
   outline: none;
   display: inline-flex;
   text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px;
 }

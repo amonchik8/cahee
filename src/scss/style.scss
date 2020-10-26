@@ -1,3 +1,24 @@
 @import './core/vars';
 @import './core/mixins';
 @import './core/common';
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&display=swap');
+
+
+//components
+@import './components/header';
+@import './components/main-title';
+@import './components/logo';
+@import './components/menu-list';
+@import './components/home';
+@import './components/about';
+@import './components/content-box';
+@import './components/img';
+@import './components/button';
+@import './components/icon';
+@import './components/title';
+@import './components/blog';
+@import './components/list';
+@import './components/item';
+@import './components/card';
