@@ -1,0 +1,21 @@
+.contact-section {
+    text-align: center;
+    padding: 101px 0 120px;
+    &__background {
+        flex-grow: 1;
+        background-image: url('../../src/assets/images/contact-section-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__description {
+        max-width: 350px;
+        margin: 0 auto;
+        @include text($H17, 400);
+        line-height: 1.5;
+        margin-bottom: 46px;
+    }
+    &__main {
+        @include flex(space-between, flex-start, row, wrap);
+    }
+}

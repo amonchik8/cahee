@@ -1,0 +1,20 @@
+.blog-section {
+    @include flex (flex-start, center, column, wrap);
+    padding: 100px 0 120px;
+    &__background {
+        background-color: $BG-BLOG-COLOR;
+    }
+    &__title {
+    margin-bottom: 30px;
+    color: $WHITE;
+    }
+    &__description {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 565px;
+        @include text($H17, 300, $WHITE);
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 47px;
+    }
+}

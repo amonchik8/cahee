@@ -12,7 +12,7 @@ button,
 textarea,
 select {
   font-size: 16px;
-  font-family: 'Ralewey';
+  font-family: $BASE-FONT;
 }
 
 ul {
@@ -28,7 +28,9 @@ a, button {
 }
 
 .container {
+  max-width: 1170px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 200px;
+
 }

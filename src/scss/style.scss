@@ -7,18 +7,25 @@
 
 
 //components
+@import './components/button';
+@import './components/title';
+
 @import './components/header';
 @import './components/main-title';
 @import './components/logo';
 @import './components/menu-list';
 @import './components/home';
-@import './components/about';
-@import './components/content-box';
-@import './components/img';
-@import './components/button';
 @import './components/icon';
-@import './components/title';
-@import './components/blog';
-@import './components/list';
-@import './components/item';
+@import './components/content-box';
+
+@import './components/about-section';
+@import './components/img';
+
+@import './components/blog-section';
+@import './components/blog-list';
 @import './components/card';
+
+@import './components/contact-section';
+@import './components/form';
+@import './components/contact';
+@import './components/footer';

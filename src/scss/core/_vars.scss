@@ -1,14 +1,23 @@
 //Colors
-$BUTTON-ABOUT-COLOR: #ff6033;
-$BUTTON-BLOG-COLOR: #f72b3b;
-$BG-ABOUT-COLOR: #00c4c4;
-$BG-BLOG-COLOR: #b07cf7;
 $WHITE: #fff;
 $BLACK: #000;
+$aqua: #00c4c4;
+$orange: #ff6033;
+$pink: #f72b3b;
+$PINKER: #ff2b58;
+
+$BG-ABOUT-COLOR: $aqua;
+$BG-BLOG-COLOR: #b07cf7;
+$INPUT-COLOR: #7FE1E1;
+$INPUT-BORDER-COLOR: #355b82;
+$INPUT-COLOR-FOCUS: $aqua;
+$FOOTER-COLOR: #262626;
+$FOOTER-TEXT-COLOR: #b9b9b9;
+
 
 // Fonts
 $LOGO-FONT: 'Pacifico';
-$BASE-FONT: 'Ralewey';
+$BASE-FONT: 'Raleway';
 $base-font-size: 16px;
 
 //Font Sizes
@@ -26,4 +35,5 @@ $H21: calcRem(21px);
 $H20: calcRem(20px);
 $H17: calcRem(17px);
 $H16: calcRem(16px);
+$H15: calcRem(15px);
 $H13: calcRem(13px);

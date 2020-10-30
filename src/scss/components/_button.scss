@@ -1,18 +1,45 @@
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $BUTTON-ABOUT-COLOR;
-    font-family: $BASE-FONT, sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: $H20;
-    font-weight: 300;
-    height: 50px;
-    width: 200px;
-    padding: 10px 20px;
-    border: none;
-    &--BLOG {
-        background: $BUTTON-BLOG-COLOR;
+    @include flex(center, center);
+    cursor: pointer;
+    font-family: $BASE-FONT;
+    line-height: 1.05;
+    @include text($H20, 300, $WHITE);
+    min-width: 200px;
+    white-space: nowrap;
+    padding: 17px 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition-property: background-color, box-shadow;
+    transition-timing-function: ease;
+    transition-duration: 0.2s;
+    @include hover() {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    &--pink {
+        @include media($screen-tablet) {
+        width: initial;
+        max-width: max-content;
+        width: 100%;
+        }
+        background-color: $pink;
+        @include hover () {
+        background-color: lighten($pink, 5%);
+        }
+        &:active {
+        background-color: darken($pink, 5%);
+        }
+    }
+    &--orange {
+        @include media($screen-tablet) {
+        width: initial;
+        max-width: max-content;
+        width: 100%;
+        }
+        background-color: $orange;
+        @include hover () {
+        background-color: lighten($orange, 5%);
+        }
+        &:active {
+        background-color: darken($orange, 5%);
+        }
     }
 }

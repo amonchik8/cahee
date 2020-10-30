@@ -1,8 +1,12 @@
 .header {
-    background-image: url('../../src/assets/images/img.png');
-    width: 100%;
+    @include flex(center, stretch, column);
+    flex-grow: 1;
+    &__background {
+    display: flex;
+    background-image: url('../../src/assets/images/header-bg.png');
     min-height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    }
 }

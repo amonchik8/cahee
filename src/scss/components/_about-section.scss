@@ -1,0 +1,8 @@
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__background {
+        background-color: $BG-ABOUT-COLOR;
+    }
+}
