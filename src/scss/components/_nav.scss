@@ -1,8 +1,5 @@
-.menu-list {
-    list-style: none;
-    font-family: 'Raleway';
-    font-size: $H16;
-    font-weight: 600;
+.nav {
+    @include text($H16, 600);
     &__item {
         padding-top: 4px;
         display: inline;
@@ -12,8 +9,7 @@
         border-top: 3px solid $orange;
     }
     &__item-anchor {
-        text-decoration: none;
-        color: black;
+        color: $FONT-COLOR;
     }
     &__item:not(:last-of-type) {
         margin-right: 30px;

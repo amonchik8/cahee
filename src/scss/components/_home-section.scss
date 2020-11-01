@@ -1,0 +1,23 @@
+.home-section {
+    @include flex(center, flex-start, column);
+    flex-grow: 1;
+    &__title {
+        @include text($H60, 900, $FONT-COLOR);
+        margin-bottom: 30px;
+    }
+    &__description {
+        max-width: 371px;
+        margin-bottom: 30px;
+        @include text($H17, 300, $FONT-COLOR);
+        line-height: 1.6;
+    }
+    &__icon-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        }
+}

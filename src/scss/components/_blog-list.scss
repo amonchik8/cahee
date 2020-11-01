@@ -1,7 +1,6 @@
 .blog-list {
     @include flex(center);
     flex-wrap: wrap;
-    list-style: none;
     margin-left: -15px;
     margin-right: -15px;
     margin-bottom: 20px;

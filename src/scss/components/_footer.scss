@@ -9,12 +9,8 @@
     } 
     &__description {
         @include text($H16, 300, $FOOTER-TEXT-COLOR);
-        &--pinker {
+        &--marker {
             @include text($H15, 700, $PINKER);
         }
-    }
-    &__logo {
-        @include text($H25, 400, $FOOTER-TEXT-COLOR);
-        font-family: 'Pacifico';
     }
 }

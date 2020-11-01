@@ -1,4 +1,3 @@
 .title {
-    @include text($H90, 700); 
-    line-height: 1.6;  
+    @include text($H90, 700, $FONT-COLOR);  
 }

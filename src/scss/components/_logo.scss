@@ -1,5 +1,9 @@
 .logo {
     font-family: $LOGO-FONT, cursive;
-    font-weight: 400;
-    font-size: $H48;
+    &__header {
+        @include text($H48, 400, $FONT-COLOR); 
+    }
+    &__footer {
+        @include text($H25, 400, $FOOTER-TEXT-COLOR);
+    }
 }

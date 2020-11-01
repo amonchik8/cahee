@@ -7,19 +7,16 @@
 
 
 //components
-@import './components/button';
-@import './components/title';
-
 @import './components/header';
-@import './components/main-title';
 @import './components/logo';
-@import './components/menu-list';
-@import './components/home';
-@import './components/icon';
-@import './components/content-box';
+@import './components/nav';
+@import './components/title';
+@import './components/button';
+@import './components/footer';
+
+@import './components/home-section';
 
 @import './components/about-section';
-@import './components/img';
 
 @import './components/blog-section';
 @import './components/blog-list';
@@ -28,4 +25,4 @@
 @import './components/contact-section';
 @import './components/form';
 @import './components/contact';
-@import './components/footer';
+

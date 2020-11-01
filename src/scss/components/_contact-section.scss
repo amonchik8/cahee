@@ -8,10 +8,13 @@
         background-size: cover;
         background-position: center;
     }
+    &__title {
+        margin-bottom: 32px;
+    }
     &__description {
         max-width: 350px;
         margin: 0 auto;
-        @include text($H17, 400);
+        @include text($H17, 400, $FONT-COLOR);
         line-height: 1.5;
         margin-bottom: 46px;
     }
