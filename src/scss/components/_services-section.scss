@@ -1,0 +1,10 @@
+.services-section {
+    @include flex(space-between, center, row, nowrap);
+    padding: 80px 24px 120px;
+    &__background {
+        background-color: $BG-SERVICES-COLOR;
+    }
+    &__title {
+        color: $WHITE;
+    }
+}

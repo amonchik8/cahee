@@ -1,8 +1,7 @@
 .form {
-    @include flex(flex-start, stretch, column);
-    max-width: 500px;
-    width: 100%;
     &__input { 
+        outline: none;
+        &--contact-section {
         @include placeholder {
             @include text($H15, 300, $WHITE);
         }
@@ -16,12 +15,20 @@
         transition-timing-function: ease;
         @include text($H15, 700, $WHITE);
         line-height: 1.66;
-        outline: none;
         margin-bottom: 15px;
-    }
-    &__input:focus {
+        }
+        &--contact-section:focus {
         border-left: 5px solid $INPUT-BORDER-COLOR;
         background-color: $INPUT-COLOR-FOCUS;
+        }
+        &--subscribe-section {
+        height: 55px;
+        padding: 20px;
+        @include text($H15, 300, $FONT-COLOR);
+        border: 1px solid $FONT-COLOR;
+        margin-right: 30px;
+        width: 570px;
+        }
     }
     &__textarea {
         @include placeholder {

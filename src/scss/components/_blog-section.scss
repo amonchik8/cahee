@@ -1,6 +1,6 @@
 .blog-section {
     @include flex (flex-start, center, column, wrap);
-    padding: 100px 0 120px;
+    padding: 80px 0 120px;
     &__background {
         background-color: $BG-BLOG-COLOR;
     }

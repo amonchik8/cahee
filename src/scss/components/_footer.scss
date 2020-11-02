@@ -1,6 +1,6 @@
 .footer {
     @include flex(space-between, center, row);
-    padding: 32px 0;
+    padding: 32px 24px;
     max-height: 90px;
     background-color: $FOOTER-COLOR;
      &__inner {

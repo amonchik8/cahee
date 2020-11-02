@@ -1,6 +1,7 @@
 .contact-section {
+    @include flex-col;
     text-align: center;
-    padding: 101px 0 120px;
+    padding: 80px 24px 120px;
     &__background {
         flex-grow: 1;
         background-image: url('../../src/assets/images/contact-section-bg.png');
@@ -19,6 +20,11 @@
         margin-bottom: 46px;
     }
     &__main {
-        @include flex(space-between, flex-start, row, wrap);
+        @include flex(space-between, flex-start, row, nowrap);
+    }
+    &__form {
+    @include flex(flex-start, stretch, column);
+    max-width: 500px;
+    width: 100%;
     }
 }

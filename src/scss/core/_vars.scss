@@ -3,12 +3,17 @@ $WHITE: #fff;
 $BLACK: #000;
 $aqua: #00c4c4;
 $main: #262626;
+$cayen: #5585a2;
+$green: #96b92c;
 $orange: #ff6033;
 $pink: #f72b3b;
 $PINKER: #ff2b58;
 
 $BG-ABOUT-COLOR: $aqua;
 $BG-BLOG-COLOR: #b07cf7;
+$BG-SERVICES-COLOR: #70bfff;
+$BG-GALLERY-COLOR: #ffe92f;
+$SERVICES-CARD-BORDER-COLOR: #9d9d9d;
 $INPUT-COLOR: #7FE1E1;
 $INPUT-BORDER-COLOR: #355b82;
 $INPUT-COLOR-FOCUS: $aqua;
@@ -29,8 +34,10 @@ $base-font-size: 16px;
 }
 
 $H90: calcRem(90px);
+$H67: calcRem(67px);
 $H60: calcRem(60px);
 $H48: calcRem(48px);
+$H40: calcRem(40px);
 $H32: calcRem(32px); 
 $H25: calcRem(25px); 
 $H21: calcRem(21px);

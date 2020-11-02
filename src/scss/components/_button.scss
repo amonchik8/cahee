@@ -42,4 +42,30 @@
         background-color: darken($orange, 5%);
         }
     }
+    &--small {
+        min-width: 170px;
+    }
+    &--cayen {
+        @include media($screen-tablet) {
+        width: initial;
+        max-width: max-content;
+        width: 100%;
+        }
+        background-color: $cayen;
+        @include hover () {
+        background-color: lighten($cayen, 5%);
+        }
+        &:active {
+        background-color: darken($cayen, 5%);
+        }
+    }
+    &--green {
+        background-color: $green;
+        @include hover () {
+        background-color: lighten($green, 5%);
+        }
+        &:active {
+        background-color: darken($green, 5%);
+        }
+    }
 }

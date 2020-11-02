@@ -1,6 +1,6 @@
 .about-section {
-    @include flex(space-between, center, row, wrap);
-    padding: 70px 0;
+    @include flex(space-between, center, row, nowrap);
+    padding: 70px 24px;
      &__background {
         background-color: $BG-ABOUT-COLOR;
     }
@@ -17,9 +17,9 @@
     }
     &__banner-wrapper {
         display: block;
-        border: 5px solid black;
+        //border: 5px solid black;
         position: relative;
-        padding-bottom: 50%;
+        padding-bottom: 48.5%;
         height: 0;
         width: 50%;
     } 
@@ -32,8 +32,7 @@
         right: 0;
         width: 100%;
         height: auto;
-       //flex: 1 1;
-      // background-color: red;
-      // @include padding-hack(40%, cover, false);
+       // background-color: red;
+      // @include padding-hack(50%, contain, false);
     }
 }

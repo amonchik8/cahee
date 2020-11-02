@@ -12,8 +12,7 @@
         line-height: 1.6;
     }
     &__icon-wrapper {
-        display: flex;
-        justify-content: center;
+        @include flex(center);
         margin-bottom: 70px;
     }
     &__icon {
