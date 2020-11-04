@@ -13,10 +13,8 @@
     }
     &__item-anchor {
         @include text($H16, 600);
-        border: 3px solid transparent;
         color: $FONT-COLOR;
         text-transform: uppercase;
-        padding-top: 4px;
     }
     &__item:not(:last-of-type) {
         margin-right: 30px;

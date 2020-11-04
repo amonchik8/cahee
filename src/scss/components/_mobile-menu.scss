@@ -12,7 +12,7 @@
         opacity: 0;
         left: 4px;
         top: 4px;
-        &:checked ~ .mobile-menu__list {
+        &:checked ~ .mobile-menu__box {
             visibility: visible;
             transform: translateX(0);
         }
@@ -22,24 +22,28 @@
         position: relative;
         z-index: 1;
     }
-    &__list {
-        @include flex(center, flex-end, column);
-        transform: translateX(200%);
-        position: fixed;
+    &__box {
         top: 100%;
         right: 0;
         left: 0;
-        top: 71px;
+        top: 66px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        transform: translateX(200%);
+        visibility: hidden;
+        @include transition(visibility, transform);
+    }
+    &__list {
+        @include flex(center, flex-end, column);
         padding: 24px;
         background-color: $WHITE;
         width: 100%;
-        visibility: hidden;
-        @include transition(visibility, transform);
-
     }
     &__item {
         &:not(:last-of-type) {
-            margin-bottom: 10px;
+            margin-bottom: 14px;
         }
     }
 }
