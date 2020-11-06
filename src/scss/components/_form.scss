@@ -28,6 +28,22 @@
         border: 1px solid $FONT-COLOR;
         margin-right: 30px;
         width: 570px;
+        @media screen and(max-width: $screen-tablet-large) {
+            width: 470px;
+        }
+        @media screen and(max-width: $screen-tablet) {
+            width: 400px;
+        }
+        @media screen and(max-width: $screen-tablet) {
+            width: 100%;
+        }
+        @media screen and(max-width: 660px) {
+            width: 100%
+        }
+        @media screen and(max-width: 450px) {
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
         }
     }
     &__textarea {

@@ -1,11 +1,22 @@
 .about-section {
     @include flex(space-between, center, row, nowrap);
     padding: 70px 24px;
+    @media screen and(max-width:$screen-tablet-large) {
+        @include flex(center, center, row, wrap);
+    }
      &__background {
         background-color: $BG-ABOUT-COLOR;
     }
     &__title {
         color: $WHITE;
+        @media screen and(max-width:$screen-desktop) {
+            font-size: $H67;
+            text-align: center;
+        }
+        @media screen and(max-width:$screen-tablet-small) {
+            font-size: $H48;
+            text-align: center;
+        }
     }
     &__description {
         max-width: 500px;
@@ -22,6 +33,19 @@
         padding-bottom: 48.5%;
         height: 0;
         width: 50%;
+        @media screen and(max-width:$screen-tablet-large) {
+            margin-bottom: 30px;
+            min-width: 350px;
+        }
+        @media screen and(max-width:680px) {
+            min-width: 250px;
+        }
+        @media screen and(max-width:470px) {
+            min-width: 200px;
+        }
+        @media screen and(max-width:375px) {
+            min-width: 170px;
+        }
     } 
     &__banner {
         display: block;
@@ -32,6 +56,18 @@
         right: 0;
         width: 100%;
         height: auto;
+        /* @media screen and(max-width:$screen-tablet-large) {
+            min-width: 350px;
+        } */
+        /* @media screen and(max-width:680px) {
+            min-width: 250px;
+        }
+        @media screen and(max-width:470px) {
+            min-width: 200px;
+        }
+        @media screen and(max-width:375px) {
+            min-width: 170px;
+        } */
        // background-color: red;
       // @include padding-hack(50%, contain, false);
     }

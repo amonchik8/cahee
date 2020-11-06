@@ -11,6 +11,9 @@
     }
     &__title {
         margin-bottom: 32px;
+        @media screen and (max-width: $screen-iphone-6) {
+            font-size: $H67;
+            }
     }
     &__description {
         max-width: 350px;
@@ -20,11 +23,23 @@
         margin-bottom: 46px;
     }
     &__main {
-        @include flex(space-between, flex-start, row, nowrap);
+        @include flex(space-between, flex-start, row, wrap);
+        @media screen and (max-width: $screen-tablet-large) {
+            @include flex(center, flex-start, row, wrap);
+            }
     }
     &__form {
-    @include flex(flex-start, stretch, column);
+    @include flex(center, stretch, column);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    @media screen and (max-width: $screen-tablet) {
+        margin-right: 0;
+    }
+    @media screen and (min-width: $screen-desktop) {
     max-width: 500px;
     width: 100%;
+    }
     }
 }

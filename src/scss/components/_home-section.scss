@@ -10,10 +10,14 @@
         margin-bottom: 30px;
         @include text($H17, 300, $FONT-COLOR);
         line-height: 1.6;
+        @media screen and(max-width:$screen-tablet-small) {
+           background-color: $WHITE;
+        }
     }
     &__icon-wrapper {
-        @include flex(center);
-        margin-bottom: 70px;
+       @include flex;
+       margin-bottom: 70px;
+       align-self: center;
     }
     &__icon {
         width: 40px;

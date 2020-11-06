@@ -1,10 +1,16 @@
 .services-section {
-    @include flex(space-between, center, row, nowrap);
+    @include flex(space-between, center, row,  wrap-reverse);
     padding: 80px 24px 120px;
+    @media screen and(max-width: 1034px) {
+        @include flex(center, center, row, wrap-reverse);
+    }  
     &__background {
         background-color: $BG-SERVICES-COLOR;
     }
     &__title {
         color: $WHITE;
+        @media screen and(max-width: 608px) {
+            
+        }
     }
 }
