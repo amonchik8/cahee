@@ -1,6 +1,8 @@
 .services-list {
     @include flex(flex-start, flex-start, column, wrap);
-    margin-right: 25px;
+    @media screen and(max-width: 470px) {
+        margin: 0 24px
+    }
     &__item:not(:last-of-type) {
         margin-bottom: 20px;
     }

@@ -1,7 +1,7 @@
 .services-card {
     @include flex(space-between, center, row, nowrap);
     width: 400px;
-    @media screen and (max-width: $screen-iphone-plus) {
+    @media screen and (max-width: 430px) {
         width: 100%;
     }
     background-color: $WHITE;
@@ -10,7 +10,7 @@
         @include text($H20, 700);
         line-height: 27px;
         margin: 0 70px;
-        @media screen and(max-width: 371px) {
+        @media screen and(max-width: 470px) {
             margin: 0 40px;
             width: 100%;
         } 
