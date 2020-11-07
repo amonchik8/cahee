@@ -9,11 +9,13 @@
         background-size: cover;
         background-position: center;
     }
+    &__container {
+        max-width: 1172px;
+        margin: 0 auto;
+    }
     &__title {
+        text-align: center;
         margin-bottom: 32px;
-        @media screen and (max-width: $screen-iphone-6) {
-            font-size: $H67;
-            }
     }
     &__description {
         max-width: 350px;
@@ -23,23 +25,27 @@
         margin-bottom: 46px;
     }
     &__main {
-        @include flex(space-between, flex-start, row, wrap);
-        @media screen and (max-width: $screen-tablet-large) {
-            @include flex(center, flex-start, row, wrap);
-            }
+        @include flex(center, flex-start, row, wrap);
+        @include media($screen-tablet-large) {
+            @include flex(space-between, flex-start, row, wrap);
+        }
     }
     &__form {
     @include flex(center, stretch, column);
     max-width: 400px;
     width: 100%;
     margin-bottom: 24px;
-    margin-right: 24px;
-    @media screen and (max-width: $screen-tablet) {
-        margin-right: 0;
+    @include media($screen-tablet) {
+        max-width: 450px;
     }
-    @media screen and (min-width: $screen-desktop) {
-    max-width: 500px;
-    width: 100%;
+    @include media(818px) {
+        margin-right: 20px;
+    }
+    @include media(838px) {
+        margin-bottom: 0;
+    }
+    @include media($screen-netbook) {
+        max-width: 500px;
     }
     }
 }

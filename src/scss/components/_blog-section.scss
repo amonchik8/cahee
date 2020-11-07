@@ -4,6 +4,10 @@
     &__background {
         background-color: $BG-BLOG-COLOR;
     }
+    &__container {
+        max-width: 1172px;
+        margin: 0 auto;
+    }
     &__title {
     margin-bottom: 30px;
     color: $WHITE;

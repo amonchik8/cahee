@@ -18,10 +18,10 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     }
     &--pink {
-        @include media($screen-tablet) {
+        width: 100%;
+        @include media($screen-tablet + 1px) {
         width: initial;
         max-width: max-content;
-        width: 100%;
         }
         background-color: $pink;
         @include hover () {
@@ -32,10 +32,10 @@
         }
     }
     &--orange {
-        @include media($screen-tablet) {
+        width: 100%;
+        @include media($screen-tablet + 1px) {
         width: initial;
         max-width: max-content;
-        width: 100%;
         }
         background-color: $orange;
         @include hover () {
@@ -46,13 +46,16 @@
         }
     }
     &--small {
-        min-width: 170px;
+        min-width: 100%;
+        @include media($screen-tablet + 1px){
+            min-width: 170px;
+        }
     }
     &--cayen {
-        @include media($screen-tablet) {
+        width: 100%;
+        @include media($screen-tablet +1px) {
         width: initial;
         max-width: max-content;
-        width: 100%;
         }
         background-color: $cayen;
         @include hover () {
@@ -63,6 +66,10 @@
         }
     }
     &--green {
+        margin-top: 30px;
+        @include media($screen-tablet + 1px){
+            margin-top: 0;
+        }
         background-color: $green;
         @include hover () {
         background-color: lighten($green, 5%);

@@ -4,14 +4,18 @@
     &__background {
         background-color: $BG-GALLERY-COLOR;
     }
+    &__container {
+        max-width: 1172px;
+        margin: 0 auto;
+    }
     &__title {
         align-self: center;
-        @include text($H90, 700, $FONT-COLOR);
+        @include text($H67, 700, $FONT-COLOR);
         margin-bottom: 28px;
         line-height: 1.17;
-        @media screen and (max-width:$screen-iphone-6) {
-            font-size: $H67;
-        }
+         @include media($screen-iphone-6) {
+            @include text($H90, 700, $FONT-COLOR);
+        } 
     }
     &__description {
         max-width: 577px;

@@ -1,8 +1,8 @@
 .contact {
-    @include flex(flex-start, flex-start, column);
-    @media screen and (max-width: $screen-iphone-6) {
-        @include flex(center, center, column);
-        }
+    @include flex(center, center, column);
+    @include media(838px) {
+        @include flex(flex-start, flex-start, column);
+    }
     &__title {
         text-transform: uppercase;
         @include text($H17, 700, $FONT-COLOR);

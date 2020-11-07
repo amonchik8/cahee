@@ -1,6 +1,7 @@
 .nav {
-    @media screen and (max-width: $screen-tablet) {
-        display: none;
+    display: none;
+    @include media($screen-tablet + 1px ) {
+        display: block;
     }
     @include text($H16, 600);
     &__item {

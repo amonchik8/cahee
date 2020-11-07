@@ -26,25 +26,18 @@
         padding: 20px;
         @include text($H15, 300, $FONT-COLOR);
         border: 1px solid $FONT-COLOR;
-        margin-right: 30px;
-        width: 570px;
-        @media screen and(max-width: $screen-tablet-large) {
+        margin-right: 0;
+        width: 100%;
+        @include media($screen-tablet + 1px){
+            margin-right: 30px;
+        }
+        @include media($screen-tablet-large + 1px){
+            width: 570px;
+        }
+        @include media($screen-tablet + 1px){
             width: 470px;
         }
-        @media screen and(max-width: $screen-tablet) {
-            width: 400px;
-        }
-        @media screen and(max-width: $screen-tablet) {
-            width: 100%;
-        }
-        @media screen and(max-width: 660px) {
-            width: 100%
-        }
-        @media screen and(max-width: 450px) {
-            margin-bottom: 20px;
-            margin-right: 0;
-        }
-        }
+        } 
     }
     &__textarea {
         @include placeholder {

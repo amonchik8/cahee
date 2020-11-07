@@ -2,12 +2,15 @@
     @include flex(space-between, stretch, column, wrap);
     @include text($H20, 400, $WHITE);
     position: relative;
-    min-height: 310px;
-    @media screen and (min-width: 420px) {
-        min-width: 354px;
+    min-height: 280px;
+    @include media($screen-iphone-6) {
+        min-height: 310px;
     }
-    @media screen and (max-width: 420px) {
-        min-height: 280px;
+    @include media() {
+        width: 304px;
+    }
+    @include media($screen-desktop-large) {
+        width: 354px;
     }
     &__image {
         position: absolute;

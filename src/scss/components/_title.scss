@@ -1,15 +1,17 @@
 .title {
-    @include text($H90, 700, $FONT-COLOR);
-    @media screen and(max-width: 1034px) {
-        font-size: $H67;
+    @include text($H40, 700, $FONT-COLOR);
+    text-align: center;
+    @include media($screen-tablet-small) {
+        @include text($H48, 700, $FONT-COLOR);
     }
-    @media screen and(max-width: 470px) {
-        font-size: $H60;
+    @include media($screen-tablet-large) {
+        @include text($H60, 700, $FONT-COLOR);
+        text-align: left;
     }
-    @media screen and(max-width: 430px) {
-        font-size: $H48;
+    @include media($screen-netbook) {
+        @include text($H67, 700, $FONT-COLOR);
     }
-    @media screen and(max-width: 355px) {
-        font-size: $H40;
-    }     
+    @include media($screen-desktop) {
+        @include text($H90, 700, $FONT-COLOR);
+    }   
 }

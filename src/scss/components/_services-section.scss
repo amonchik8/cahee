@@ -1,19 +1,21 @@
 .services-section {
-    @include flex(space-between, center, row,  wrap-reverse);
-    padding: 80px 24px 120px;
-     @media screen and(max-width: 870px) {
-        @include flex(center, center, row, wrap-reverse);
+    @include flex(center, center, row, wrap-reverse);
+    padding: 20px 24px 120px;
+    @include media(786px) {
+        @include flex(space-between, center, row,  wrap-reverse);
     }
-    @media screen and(max-width: 430px) {
-        padding: 20px 24px 120px;
-    }  
+    @include media($screen-tablet-large) {
+        padding: 80px 24px 120px;
+    }
+    &__container {
+        max-width: 1172px;
+        margin: 0 auto;
+    } 
     &__background {
         background-color: $BG-SERVICES-COLOR;
     }
     &__title {
         color: $WHITE;
-        @media screen and(max-width: 608px) {  
-        }
     }
     &__banner {
         background-image: url(../assets/images/services_banner.png);
@@ -21,24 +23,17 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        min-height: 623px;
+        min-height: 290px;
+        @include media(786px) {
+            min-height: 400px;
+            margin-bottom: 0;
+        }
+        @include media() {
+            min-height: 623px;
+        }
+        margin-bottom: 25px;
     }
     &__banner-wrapper {
-        @include flex(center, center, column);
-        @media screen and(max-width: 1034px) {
-            max-height: 460px;
-        }
-        @media screen and(max-width: 894px) {
-            margin-bottom: 20px;
-        }
-        @media screen and(max-width: 470px) {
-            max-height: 445px;
-        }
-        @media screen and(max-width: 430px) {
-            max-height: 340px;
-        }
-        @media screen and(max-width: 355px) {
-            max-height: 290px;
-        }     
+        @include flex(center, center, column);  
     }
 }

@@ -2,6 +2,10 @@
     @include flex(center, stretch, column);
     flex-grow: 1;
     padding: 0 24px;
+    &__container {
+        max-width: 1172px;
+        margin: 0 auto;
+    }
     &__background {
     display: flex;
     background-image: url('../../src/assets/images/header-bg.png');
@@ -12,8 +16,6 @@
     }
     &__top-wrapper {
         @include flex(space-between, center);
-        position: sticky;
-        top: 0;
         left: 0;
         right: 0;
         z-index: 10; 
