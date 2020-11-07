@@ -10,7 +10,7 @@
         background-color: rgba(0, 196, 196, 0.5);
         border: none;
         border-left: 5px solid transparent;
-        transition-property: border-color;
+        transition-property: border-color, background-color;
         transition-duration: 0.4s;
         transition-timing-function: ease;
         @include text($H15, 700, $WHITE);
@@ -47,7 +47,7 @@
         background-color: rgba(0, 196, 196, 0.5);
         border: none;
         border-left: 5px solid transparent;
-        transition-property: border-color;
+        transition-property: border-color, background-color;
         transition-duration: 0.4s;
         transition-timing-function: ease;
         @include text($H15, 700, $WHITE);
@@ -55,6 +55,7 @@
         outline: none;  
         padding: 20px;
         resize: none;
+        margin-bottom: 15px;
     }
     &__textarea:focus {
         border-left: 5px solid $INPUT-BORDER-COLOR;

@@ -31,12 +31,17 @@
         }
     }
     &__form {
-    @include flex(center, stretch, column);
-    max-width: 400px;
-    width: 100%;
-    margin-bottom: 24px;
-    @include media($screen-tablet) {
-        max-width: 450px;
+        @include flex(center, stretch, column);
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 24px;
+        &:valid:not(:empty) .button{
+        visibility: visible;
+        opacity: 1;
+        cursor: pointer;
+        } 
+        @include media($screen-tablet) {
+            max-width: 450px;
     }
     @include media(818px) {
         margin-right: 20px;
@@ -47,5 +52,14 @@
     @include media($screen-netbook) {
         max-width: 500px;
     }
+    }
+    &__button {
+        transition: opacity 0.8s ease;
+        cursor: auto;
+        @include media() {
+            max-width: 200px;
+        }
+        visibility: hidden;
+        opacity: 0;
     }
 }

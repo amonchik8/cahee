@@ -78,4 +78,13 @@
         background-color: darken($green, 5%);
         }
     }
+    &--aqua {
+        background-color: rgba(0, 196, 196, 0.5);
+        @include hover () {
+            background-color: lighten(rgba(0, 196, 196, 0.5), 5%);
+            }
+            &:active {
+            background-color: darken(rgba(0, 196, 196, 0.5), 5%);
+            }
+    }
 }
