@@ -1,4 +1,7 @@
 .nav {
+    @media screen and (max-width: $screen-tablet) {
+        display: none;
+    }
     @include text($H16, 600);
     &__item {
         padding-top: 4px;
@@ -9,7 +12,9 @@
         border-top: 3px solid $orange;
     }
     &__item-anchor {
+        @include text($H16, 600);
         color: $FONT-COLOR;
+        text-transform: uppercase;
     }
     &__item:not(:last-of-type) {
         margin-right: 30px;
