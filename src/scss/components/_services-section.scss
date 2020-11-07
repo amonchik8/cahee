@@ -1,10 +1,44 @@
 .services-section {
-    @include flex(space-between, center, row, nowrap);
+    @include flex(space-between, center, row,  wrap-reverse);
     padding: 80px 24px 120px;
+     @media screen and(max-width: 870px) {
+        @include flex(center, center, row, wrap-reverse);
+    }
+    @media screen and(max-width: 430px) {
+        padding: 20px 24px 120px;
+    }  
     &__background {
         background-color: $BG-SERVICES-COLOR;
     }
     &__title {
         color: $WHITE;
+        @media screen and(max-width: 608px) {  
+        }
+    }
+    &__banner {
+        background-image: url(../assets/images/services_banner.png);
+        @include flex(center, stretch, column);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 623px;
+    }
+    &__banner-wrapper {
+        @include flex(center, center, column);
+        @media screen and(max-width: 1034px) {
+            max-height: 460px;
+        }
+        @media screen and(max-width: 894px) {
+            margin-bottom: 20px;
+        }
+        @media screen and(max-width: 470px) {
+            max-height: 445px;
+        }
+        @media screen and(max-width: 430px) {
+            max-height: 340px;
+        }
+        @media screen and(max-width: 355px) {
+            max-height: 290px;
+        }     
     }
 }

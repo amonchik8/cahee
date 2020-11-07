@@ -3,7 +3,12 @@
     @include text($H20, 400, $WHITE);
     position: relative;
     min-height: 310px;
-    min-width: 370px;
+    @media screen and (min-width: 420px) {
+        min-width: 354px;
+    }
+    @media screen and (max-width: 420px) {
+        min-height: 280px;
+    }
     &__image {
         position: absolute;
         top: 0;

@@ -9,6 +9,9 @@
         @include text($H90, 700, $FONT-COLOR);
         margin-bottom: 28px;
         line-height: 1.17;
+        @media screen and (max-width:$screen-iphone-6) {
+            font-size: $H67;
+        }
     }
     &__description {
         max-width: 577px;
