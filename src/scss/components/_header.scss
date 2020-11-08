@@ -14,7 +14,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     }
-    &__top-wrapper {
+    &__inner {
         @include flex(space-between, center);
         left: 0;
         right: 0;

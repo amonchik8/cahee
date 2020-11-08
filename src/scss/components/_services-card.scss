@@ -7,6 +7,9 @@
     background-color: $WHITE;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.2s ease;
+    @include hover() {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
     &__name {
         @include text($H20, 700);
         line-height: 27px;
@@ -28,7 +31,4 @@
         border-left: 1px solid $SERVICES-CARD-BORDER-COLOR;
         padding: 28px 26px;
     }
-}
-.services-card:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
