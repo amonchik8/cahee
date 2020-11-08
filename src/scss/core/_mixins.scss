@@ -132,6 +132,7 @@ $screen-retina: 1660px;
     @content;
   }
 }
+
 @mixin padding-hack($padding: 50%, $size: cover, $dev: false) {
   position: relative;
   height: 0;
@@ -154,6 +155,7 @@ $screen-retina: 1660px;
     }
   }
 }
+
 @mixin hover () {
   @include media {
     &:hover {
@@ -161,6 +163,7 @@ $screen-retina: 1660px;
     }
   }
 }
+
 @mixin placeholder {
   &::-webkit-input-placeholder { @content; }
   &:-moz-placeholder           { @content; }
