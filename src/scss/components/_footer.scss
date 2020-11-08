@@ -3,6 +3,10 @@
     padding: 32px 24px;
     max-height: 90px;
     background-color: $FOOTER-COLOR;
+    &__container {
+        max-width: 1172px;
+        margin: 0 auto;
+    }
      &__inner {
         @include flex(space-between, center);
         flex: 1;
@@ -10,9 +14,15 @@
         margin: 0 auto;
     } 
     &__description {
+        display: block;
+        flex-basis: 33.33%;
+        text-align: center;
         @include text($H16, 300, $FOOTER-TEXT-COLOR);
-        &--marker {
-            @include text($H15, 700, $PINKER);
+        @include media(838px) {
+            margin: 0 -40px;
         }
+    }
+    &__marker {
+        color: $PINKER;
     }
 }

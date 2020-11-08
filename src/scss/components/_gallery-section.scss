@@ -10,12 +10,7 @@
     }
     &__title {
         align-self: center;
-        @include text($H67, 700, $FONT-COLOR);
         margin-bottom: 28px;
-        line-height: 1.17;
-         @include media($screen-iphone-6) {
-            @include text($H90, 700, $FONT-COLOR);
-        } 
     }
     &__description {
         max-width: 577px;
