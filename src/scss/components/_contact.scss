@@ -1,6 +1,6 @@
 .contact {
     @include flex(center, center, column);
-    @include media(838px) {
+    @include media(855px) {
         @include flex(flex-start, flex-start, column);
     }
     &__title {

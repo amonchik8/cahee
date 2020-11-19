@@ -43,10 +43,10 @@
         @include media($screen-tablet) {
             max-width: 450px;
     }
-    @include media(818px) {
+    @include media(835px) {
         margin-right: 20px;
     }
-    @include media(838px) {
+    @include media(855px) {
         margin-bottom: 0;
     }
     @include media($screen-netbook) {
