@@ -1,9 +1,0 @@
-.logo {
-    font-family: $LOGO-FONT, cursive;
-    &__header {
-        @include text($H48, 400, $FONT-COLOR); 
-    }
-    &__footer {
-        @include text($H25, 400, $FOOTER-TEXT-COLOR);
-    }
-}
